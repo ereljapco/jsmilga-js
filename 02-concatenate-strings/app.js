@@ -8,3 +8,6 @@
 5. log "fullMailing Address" in the console
 
 */
+
+const street = "Sesame Street";
+const country = "Philippines";

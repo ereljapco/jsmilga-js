@@ -12,3 +12,5 @@
 const street = "Sesame Street";
 const country = "Philippines";
 let fullMailingAddress = street + ', ' + country;
+
+console.log(fullMailingAddress);

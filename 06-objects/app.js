@@ -22,3 +22,7 @@ console.log(car.make);
 
 // log first color
 console.log(car.colors[0]);
+
+// invoke both methods
+car.drive();
+car.stop();

@@ -26,3 +26,6 @@ console.log(averageScore);
 let plates = 20;
 // create "people" variable and assign 7
 const people = 7;
+
+// calculate remaining plates and assign to the variable
+plates -= 7;

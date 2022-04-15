@@ -1,7 +1,12 @@
-// create "calculateTotal" function
-// add two parameters subTotal, tax
-function calculateTotal(subTotal, tax) {
-  // return sum of parameters
+// // create "calculateTotal" function
+// // add two parameters subTotal, tax
+// function calculateTotal(subTotal, tax) {
+//   // return sum of parameters
+//   return subTotal + tax;
+// }
+
+// refactor calculateTotal to function expression
+const calculateTotal = function (subTotal, tax) {
   return subTotal + tax;
 }
 

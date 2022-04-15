@@ -8,9 +8,11 @@ const car = {
   colors: ['White', 'Pearl White', 'Black', 'Red'],
   hybrid: true,
   drive() {
-
+    // setup log with random text
+    console.log('drive');
   },
   stop() {
-    
+    // setup log with random text
+    console.log('stop');
   }
 }

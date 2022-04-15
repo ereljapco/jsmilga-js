@@ -1,4 +1,5 @@
 // create "calculateTotal" function
-function calculateTotal() {
+// add two parameters subTotal, tax
+function calculateTotal(subTotal, tax) {
 
 }

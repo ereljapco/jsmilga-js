@@ -31,7 +31,7 @@ const people = 7;
 plates -= people;
 
 // add one to remaining plates
-plates += 1;
+plates++;
 
 // create message variable and display 'There are (your value goes here) plates available' - string concatenation
 const message = 'There are ' + plates + ' plates available.';

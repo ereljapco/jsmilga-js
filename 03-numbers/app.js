@@ -29,3 +29,6 @@ const people = 7;
 
 // calculate remaining plates and assign to the variable
 plates -= 7;
+
+// add one to remaining plates
+plates += 1;

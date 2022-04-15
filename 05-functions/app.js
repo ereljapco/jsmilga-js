@@ -6,6 +6,7 @@ function calculateTotal(subTotal, tax) {
 }
 
 // create 3 variables "order1", "order2", "order3"
-const order1 = null;
-const order2 = null;
-const order3 = null;
+// call calculateTotal, pass in some values and assign result to each order
+const order1 = calculateTotal(110, 10);
+const order2 = calculateTotal(45, 5);
+const order3 = calculateTotal(259, 25);

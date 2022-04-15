@@ -28,7 +28,7 @@ let plates = 20;
 const people = 7;
 
 // calculate remaining plates and assign to the variable
-plates -= 7;
+plates -= people;
 
 // add one to remaining plates
 plates += 1;

@@ -24,3 +24,5 @@ console.log(averageScore);
 
 // create "plates" variable and assign 20
 let plates = 20;
+// create "people" variable and assign 7
+const people = 7;

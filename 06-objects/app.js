@@ -16,3 +16,6 @@ const car = {
     console.log('stop');
   }
 }
+
+// log make
+console.log(car.make);

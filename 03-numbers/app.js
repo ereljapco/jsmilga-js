@@ -21,3 +21,6 @@ const averageScore = totalScore / 3;
 
 console.log(totalScore);
 console.log(averageScore);
+
+// create "plates" variable and assign 20
+let plates = 20;

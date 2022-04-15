@@ -34,4 +34,7 @@ plates -= 7;
 plates += 1;
 
 // create message variable and display 'There are (your value goes here) plates available' - string concatenation
-const message = 'There are ' + plates + 'plates available.' 
+const message = 'There are ' + plates + ' plates available.';
+
+// log message
+console.log(message);

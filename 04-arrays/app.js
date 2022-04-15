@@ -1,2 +1,3 @@
 // create "fruits" array and store some fruit values
-let fruits = ['apple', 'banana', 'cherry'];
+// setup the last item as number (random)
+let fruits = ['apple', 'banana', 'cherry', 27];

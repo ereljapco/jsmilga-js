@@ -19,3 +19,6 @@ const car = {
 
 // log make
 console.log(car.make);
+
+// log first color
+console.log(car.colors[0]);

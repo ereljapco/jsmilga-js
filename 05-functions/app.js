@@ -10,3 +10,8 @@ function calculateTotal(subTotal, tax) {
 const order1 = calculateTotal(110, 10);
 const order2 = calculateTotal(45, 5);
 const order3 = calculateTotal(259, 25);
+
+// log all three orders
+console.log('The total for order 1 is ' + order1);
+console.log('The total for order 2 is ' + order2);
+console.log('The total for order 3 is ' + order3);

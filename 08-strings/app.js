@@ -5,3 +5,6 @@ function fullName(firstName, lastName) {
   const name = firstName + lastName;
   return name.toUpperCase();
 }
+
+// invoke fullName and pass some values
+fullName('Juana', 'dela Cruz');

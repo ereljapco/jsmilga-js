@@ -8,3 +8,13 @@ const updatedStudents = students.map(function(student) {
 });
 
 console.log(updatedStudents);
+
+// filter - highScores
+// 1. filter array and return only scores >= 80
+// 2. assign to 'highScores' variable and log
+
+const highScores = students.filter(function(student) {
+  return student.score >= 80;
+});
+
+console.log(highScores);

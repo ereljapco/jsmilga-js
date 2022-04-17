@@ -22,3 +22,7 @@ function freeDinner(name, age, status) {
     console.log(`Sorry, ${name}, you are not qualified for free dinner.`)
   }
 }
+
+// test with both objects
+freeDinner(person1.name, person1.age, person1.status);
+freeDinner(person2.name, person2.age, person2.status);

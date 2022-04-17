@@ -7,4 +7,5 @@ function fullName(firstName, lastName) {
 }
 
 // invoke fullName and pass some values
-fullName('Juana', 'dela Cruz');
+// log result
+console.log(fullName('Juana', 'dela Cruz'));

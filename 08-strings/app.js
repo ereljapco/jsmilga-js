@@ -1,6 +1,13 @@
 // create function fullName
 // accept two parameters "firstName" and "lastName"
-function fullName(firstName, lastName) {
+// function fullName(firstName, lastName) {
+//   // add "firstName" and "lastName" (concat) and return result in uppercase
+//   const name = `${firstName} ${lastName}`;
+//   return name.toUpperCase();
+// }
+
+// refactor to object paramater
+function fullName({firstName, lastName}) {
   // add "firstName" and "lastName" (concat) and return result in uppercase
   const name = `${firstName} ${lastName}`;
   return name.toUpperCase();
@@ -11,4 +18,5 @@ function fullName(firstName, lastName) {
 // console.log(fullName('Juana', 'dela Cruz'));
 
 // change the order of arguments
-console.log(fullName('dela Cruz', 'Juana'));
+// console.log(fullName('dela Cruz', 'Juana'));
+console.log(fullName({lastName: 'dela Cruz', firstName: 'Juana'}));

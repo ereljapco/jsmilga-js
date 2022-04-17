@@ -10,5 +10,15 @@ const person2 = {
   name: 'John Doe',
   age: 25,
   status: 'tourist'
+}
 
+// set if else condition where age must be bigger than 18 and status must be equal to 'resident'
+
+function freeDinner(name, age, status) {
+  if (age > 18 && status === 'resident') {
+    console.log(`Hello, ${name}, you are qualified for free dinner!`)
+  }
+  else {
+    console.log(`Sorry, ${name}, you are not qualified for free dinner.`)
+  }
 }

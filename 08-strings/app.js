@@ -8,4 +8,7 @@ function fullName(firstName, lastName) {
 
 // invoke fullName and pass some values
 // log result
-console.log(fullName('Juana', 'dela Cruz'));
+// console.log(fullName('Juana', 'dela Cruz'));
+
+// change the order of arguments
+console.log(fullName('dela Cruz', 'Juana'));

@@ -10,3 +10,6 @@ function calculateTotal(arr) {
 
   return total;
 }
+
+console.log(calculateTotal(homeBills));
+console.log(calculateTotal(babyNeeds));

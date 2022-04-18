@@ -18,3 +18,13 @@ const highScores = students.filter(function(student) {
 });
 
 console.log(highScores);
+
+// find - specificId
+// 1. find specific is in array
+// 2. assign to 'specificId' variable and log
+
+const specificId = students.find(function(student) {
+  return student.id === 4;
+});
+
+console.log(specificId);

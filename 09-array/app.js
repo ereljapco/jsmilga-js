@@ -39,3 +39,20 @@ const averageScore = students.reduce(function(totalScore, student) {
 }, 0) / students.length;
 
 console.log(averageScore);
+
+// reduce - survey
+const survey = students.reduce(function(subjects, student) {
+  
+  const favoriteSubject = student.favoriteSubject;
+
+  if (subjects[favoriteSubject]) {
+    subjects[favoriteSubject] = subjects[favoriteSubject] + 1;
+  }
+  else {
+    subjects[favoriteSubject] = 1;
+  }
+
+  return subjects;
+}, {});
+
+console.log(survey);

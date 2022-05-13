@@ -1,16 +1,36 @@
 function newAccount(name, initialBalance) {
   let balance = initialBalance;
+  let prevBalance = balance;
+  let inputAmount;
+  let message;
 
   function showBalance() {
-    console.log(`Hello, ${name}! You're current balance is PHP ${balance}`);
+    if (prevBalance < balance) {
+      message = `You have deposited ${inputAmount} into your account.`;
+      prevBalance = balance;
+    } else if (prevBalance > balance) {
+      message = `You have withdrawn ${inputAmount} from your account.`;
+      prevBalance = balance;
+    } else {
+      message = `Hello, ${name}!`;
+    }
+
+    console.log(`${message} You're current balance is PHP ${balance}.`);
+    return;
   }
 
   function deposit(amount) {
+    prevBalance = balance;
+    inputAmount = amount;
     balance += amount;
+
     showBalance();
   }
 
   function withdraw(amount) {
+    prevBalance = balance;
+    inputAmount = amount;
+
     if (amount > balance) {
       console.log(
         `Sorry, ${name}. You don't have enough balance to withdraw PHP ${amount}.`
@@ -27,9 +47,8 @@ function newAccount(name, initialBalance) {
 
 const erel = newAccount('Erel', 3000);
 
-erel.showBalance();
 erel.deposit(500);
-erel.deposit(7230);
-erel.withdraw(13000.12);
-erel.withdraw(500.5);
-erel.withdraw(700);
+erel.withdraw(300);
+erel.showBalance();
+erel.deposit(1500);
+erel.showBalance();

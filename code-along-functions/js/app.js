@@ -10,7 +10,19 @@ function newAccount(name, initialBalance) {
     showBalance();
   }
 
-  return { showBalance: showBalance, deposit: deposit };
+  function withdraw(amount) {
+    if (amount > balance) {
+      console.log(
+        `Sorry, ${name}. You don't have enough balance to withdraw PHP ${amount}.`
+      );
+      return;
+    }
+
+    balance -= amount;
+    showBalance();
+  }
+
+  return { showBalance: showBalance, deposit: deposit, withdraw: withdraw };
 }
 
 const erel = newAccount('Erel', 3000);
@@ -18,3 +30,6 @@ const erel = newAccount('Erel', 3000);
 erel.showBalance();
 erel.deposit(500);
 erel.deposit(7230);
+erel.withdraw(13000.12);
+erel.withdraw(500.5);
+erel.withdraw(700);

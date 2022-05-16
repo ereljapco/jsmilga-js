@@ -11,7 +11,7 @@ number = 15;
 
 // redefine var
 var number = `orange`;
-// console.log(number);
+console.log(number);
 
 // ===== let
 // define let
@@ -20,7 +20,7 @@ let word = `word`;
 
 // reassign let
 word = `new`;
-// console.log(word);
+console.log(word);
 
 // redifine let
 // let word = `no`;

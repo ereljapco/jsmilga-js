@@ -27,3 +27,17 @@ console.log(PHRASE);
 // const PHRASE = `can't redefine`;
 // console.log(PHRASE);
 // ERROR: redeclaration
+
+const person = { name: `John` };
+// console.log(person.name);
+
+person.name = `Jane`;
+console.log(person.name);
+
+// person = { name: `Jane` };
+// console.log(person.name);
+// ERROR: invalid assignment to const
+
+// const person = { name: `Jane` };
+// console.log(person.name);
+// ERROR: redeclaration

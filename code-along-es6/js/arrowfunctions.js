@@ -13,35 +13,51 @@
 // function triple(value1, value2) {
 //   return value1 * value2 * 3;
 // }
-//////////////// Arrow
-const sayHi = () => console.log('hello');
 
-sayHi();
+//////////////// Arrow Basics
+// const sayHi = () => console.log('hello');
 
-const hello = (name) => console.log(`Hello, ${name}`);
+// sayHi();
 
-hello('Jane');
+// const hello = (name) => console.log(`Hello, ${name}`);
 
-const triple = (value1, value2) => value1 * value2 * 3;
+// hello('Jane');
 
-console.log(triple(2, 3));
+// const triple = (value1, value2) => value1 * value2 * 3;
 
-const object = () => ({ name: 'John', age: 25 });
+// console.log(triple(2, 3));
 
-// console.log(object().name);
+// const object = () => ({ name: 'John', age: 25 });
 
-const person = object();
+// // console.log(object().name);
 
-console.log(person.name);
+// const person = object();
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const big = numbers.filter((number, index) => {
-  console.log(index);
-  return number > 2;
-});
+// console.log(person.name);
 
-console.log(big);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const big = numbers.filter((number, index) => {
+//   console.log(index);
+//   return number > 2;
+// });
 
-const btn = document.querySelector('.btn');
+// console.log(big);
 
-btn.addEventListener('click', () => console.log('You clicked me!'));
+// const btn = document.querySelector('.btn');
+
+// btn.addEventListener('click', () => console.log('You clicked me!'));
+
+//////////////// Arrow arrow and this
+
+const elyse = {
+  firstName: 'Elyse',
+  lastName: 'Japco',
+  sayName: function () {
+    setTimeout(() => {
+      console.log(this);
+      console.log(`Hello! My name is ${this.firstName} ${this.lastName}`);
+    }, 2000);
+  },
+};
+
+elyse.sayName();

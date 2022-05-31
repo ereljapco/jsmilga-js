@@ -38,3 +38,8 @@ const text = [...headings]
   .join('');
 
 result.innerHTML = text;
+
+/////////////////////////////////
+const numbers = [13, 56, 2, 768, 27];
+
+console.log(Math.max(...numbers));

@@ -24,6 +24,7 @@ const person = {
 const newPerson = {
   ...person,
   province: 'Laguna',
+  job: 'mid-level developer',
 };
 
 console.log(person);

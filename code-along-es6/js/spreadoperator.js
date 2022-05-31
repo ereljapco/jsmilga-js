@@ -9,7 +9,21 @@ const girls = ['Pearl', 'Sandy'];
 const bestFriend = 'Patrick';
 
 const friends = [bestFriend, ...boys, ...girls];
-console.log(friends);
+// console.log(friends);
 
 friends[4] = 'Juana';
-console.log(friends);
+// console.log(friends);
+
+// ----- OBJECTS
+
+const person = {
+  name: 'Erel',
+  job: 'developer',
+};
+
+const newPerson = {
+  ...person,
+};
+
+console.log(person);
+console.log(newPerson);

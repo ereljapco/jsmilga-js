@@ -11,4 +11,12 @@ for (const letter of longName) {
   }
 }
 
-console.log(shortName);
+// console.log(shortName);
+
+for (const fruit of fruits) {
+  if (fruit === 'atis') {
+    break;
+  }
+
+  console.log(fruit);
+}

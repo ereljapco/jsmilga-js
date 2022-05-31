@@ -23,6 +23,7 @@ const person = {
 
 const newPerson = {
   ...person,
+  province: 'Laguna',
 };
 
 console.log(person);

@@ -27,5 +27,14 @@ const newPerson = {
   job: 'mid-level developer',
 };
 
-console.log(person);
-console.log(newPerson);
+// console.log(person);
+// console.log(newPerson);
+
+const headings = document.querySelectorAll('h1');
+const result = document.querySelector('#result');
+
+const text = [...headings]
+  .map((item) => `<span>${item.innerText}</span>`)
+  .join('');
+
+result.innerHTML = text;

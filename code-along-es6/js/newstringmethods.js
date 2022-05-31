@@ -7,4 +7,6 @@ const manager = '23456-MAN-JUANA-DELA-CRUZ';
 
 // console.log(manager.endsWith('MAN', 9));
 
-console.log(employee.includes('JUAN'));
+// console.log(employee.includes('JUAN'));
+
+console.log(person.repeat(5));

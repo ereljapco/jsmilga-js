@@ -42,4 +42,12 @@ result.innerHTML = text;
 /////////////////////////////////
 const numbers = [13, 56, 2, 768, 27];
 
-console.log(Math.max(...numbers));
+// console.log(Math.max(...numbers));
+
+const juana = ['Juana', 'Dela Cruz'];
+
+const sayHello = (firstName, lastName) => {
+  console.log(`Hello, ${firstName} ${lastName}!`);
+};
+
+sayHello(...juana);

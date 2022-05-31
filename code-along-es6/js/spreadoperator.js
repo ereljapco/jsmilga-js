@@ -10,3 +10,6 @@ const bestFriend = 'Patrick';
 
 const friends = [bestFriend, ...boys, ...girls];
 console.log(friends);
+
+friends[4] = 'Juana';
+console.log(friends);

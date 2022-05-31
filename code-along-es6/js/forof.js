@@ -15,7 +15,7 @@ for (const letter of longName) {
 
 for (const fruit of fruits) {
   if (fruit === 'atis') {
-    break;
+    continue;
   }
 
   console.log(fruit);

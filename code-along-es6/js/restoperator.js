@@ -15,6 +15,8 @@ const { job, ...otherInfo } = person;
 // console.log(job, otherInfo);
 
 // ----- FUNCTION
+const score = [88, 77, 95, 91];
+
 const computeAverageScore = (name, ...scores) => {
   let total = 0;
 
@@ -27,4 +29,5 @@ const computeAverageScore = (name, ...scores) => {
   console.log(`${name}'s average score is ${average}`);
 };
 
-computeAverageScore(person.firstName, 88, 77, 95, 91);
+// computeAverageScore(person.firstName, 88, 77, 95, 91);
+computeAverageScore(person.firstName, ...score);

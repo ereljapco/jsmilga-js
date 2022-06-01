@@ -9,3 +9,14 @@ const array = Array.of('four', true, 4);
 const word = 'hello';
 
 console.log(Array.from(word));
+
+function countTotal() {
+  let total = Array.from(arguments).reduce(
+    (total, current) => (total += current),
+    0
+  );
+
+  console.log(total);
+}
+
+countTotal(55, 45, 35);

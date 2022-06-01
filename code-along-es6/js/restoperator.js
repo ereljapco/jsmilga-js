@@ -11,4 +11,20 @@ const person = {
   job: 'developer',
 };
 const { job, ...otherInfo } = person;
-console.log(job, otherInfo);
+
+// console.log(job, otherInfo);
+
+// ----- FUNCTION
+const computeAverageScore = (name, ...scores) => {
+  let total = 0;
+
+  for (const score of scores) {
+    total += score;
+  }
+
+  average = total / scores.length;
+
+  console.log(`${name}'s average score is ${average}`);
+};
+
+computeAverageScore(person.firstName, 88, 77, 95, 91);

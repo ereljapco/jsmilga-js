@@ -8,7 +8,7 @@ const array = Array.of('four', true, 4);
 
 const word = 'hello';
 
-console.log(Array.from(word));
+// console.log(Array.from(word));
 
 function countTotal() {
   let total = Array.from(arguments).reduce(
@@ -19,4 +19,14 @@ function countTotal() {
   console.log(total);
 }
 
-countTotal(55, 45, 35);
+// countTotal(55, 45, 35);
+
+//////////////////////////////////
+const paragraphs = document.querySelectorAll('p');
+const result = document.querySelector('#result');
+
+const text = Array.from(paragraphs, (item) => {
+  return `<span>${item.textContent}</span>`;
+}).join(' ');
+
+result.innerHTML = text;

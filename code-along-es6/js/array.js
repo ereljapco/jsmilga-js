@@ -4,4 +4,8 @@ const example = ['one', 'two', 'three'];
 
 const array = Array.of('four', true, 4);
 
-console.log(array);
+// console.log(array);
+
+const word = 'hello';
+
+console.log(Array.from(word));

@@ -61,3 +61,51 @@
 
 - cannot `reasssign` within a block
 - `redeclaring` will only affect the value within the block
+
+## rest operator
+
+- Passing an array directly as an argument that uses a rest operator in its parameter will produce an array within an array
+
+```js
+const score = [88, 77, 95, 91];
+
+const computeAverageScore = (name, ...scores) => {
+  let total = 0;
+
+  for (const score of scores) {
+    total += score;
+  }
+
+  average = total / scores.length;
+
+  console.log(`${name}'s average score is ${average}`);
+};
+
+computeAverageScore(person.firstName, score);
+
+// console.log(scores)
+// [[88, 77, 95, 91]]
+```
+
+- The array should also use a rest operator as an argument
+
+```js
+const score = [88, 77, 95, 91];
+
+const computeAverageScore = (name, ...scores) => {
+  let total = 0;
+
+  for (const score of scores) {
+    total += score;
+  }
+
+  average = total / scores.length;
+
+  console.log(`${name}'s average score is ${average}`);
+};
+
+computeAverageScore(person.firstName, ...score);
+
+// console.log(scores)
+// [88, 77, 95, 91]
+```

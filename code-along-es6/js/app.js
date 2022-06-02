@@ -71,13 +71,9 @@ const students = [
   },
 ];
 
-const houses = new Set();
-
-for (const student of students) {
-  houses.add(student.house);
-}
-
-houses.add('Hufflepuff');
-houses.delete('Slytherin');
+const houses = [
+  'Hufflepuff',
+  ...new Set(students.map((student) => student.house)),
+];
 
 console.log(houses);

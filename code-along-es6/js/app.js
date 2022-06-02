@@ -77,4 +77,6 @@ for (const student of students) {
   houses.add(student.house);
 }
 
+houses.add('Hufflepuff');
+
 console.log(houses);

@@ -42,4 +42,10 @@ const personProperties = Object.entries(person);
 
 // console.log(personKeys);
 // console.log(personValues);
-console.log(personProperties);
+// console.log(personProperties);
+
+for (const property of personProperties) {
+  const [key, value] = property;
+
+  console.log(`${key}: ${value}`);
+}

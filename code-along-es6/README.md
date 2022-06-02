@@ -109,3 +109,35 @@ computeAverageScore(person.firstName, ...score);
 // console.log(scores)
 // [88, 77, 95, 91]
 ```
+
+## find
+
+- `find` method returns the first element that matches
+
+```js
+const people = [
+  { id: 1, name: 'Harry' },
+  { id: 2, name: 'Ron' },
+  { id: 3, name: 'Hermione' },
+];
+
+const hermione = people.find((person) => person.name === 'Hermione');
+
+console.log(hermione);
+// { id: 3, name: 'Hermione'}
+```
+
+- `filter` method returns a new array with the elements that matches
+
+```js
+const people = [
+  { id: 1, name: 'Harry' },
+  { id: 2, name: 'Ron' },
+  { id: 3, name: 'Hermione' },
+];
+
+const hermione = people.filter((person) => person.name === 'Hermione');
+
+console.log(hermione);
+// [{ id: 3, name: 'Hermione' }]
+```

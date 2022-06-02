@@ -76,4 +76,22 @@ const houses = [
   ...new Set(students.map((student) => student.house)),
 ];
 
-console.log(houses);
+// console.log(houses);
+
+////////////////////////////////////
+// ----- string includes()
+
+const products = [
+  { title: 'Modern Poster' },
+  { title: 'Bar Stool' },
+  { title: 'Armchair' },
+  { title: 'Leather Chair' },
+];
+
+const text = 'chair';
+
+const filteredProducts = products.filter((product) =>
+  product.title.toLowerCase().includes(text)
+);
+
+console.log(filteredProducts);

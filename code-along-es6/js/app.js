@@ -78,5 +78,6 @@ for (const student of students) {
 }
 
 houses.add('Hufflepuff');
+houses.delete('Slytherin');
 
 console.log(houses);

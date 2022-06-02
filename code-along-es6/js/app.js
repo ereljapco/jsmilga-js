@@ -8,8 +8,15 @@ const people = [
 
 const hermione = people.findIndex((person) => person.name === 'Hermione');
 
-console.log(hermione);
+// console.log(hermione);
 
 const newPeople = people.slice(0, hermione);
 
-console.log(newPeople);
+// console.log(newPeople);
+
+// ----- every
+
+const grades = [65, 88, 93, 55, 90];
+const allGoodGrades = grades.every((grade) => grade >= 65);
+
+console.log(allGoodGrades);

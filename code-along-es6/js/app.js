@@ -44,8 +44,8 @@ const personProperties = Object.entries(person);
 // console.log(personValues);
 // console.log(personProperties);
 
-for (const property of personProperties) {
-  const [key, value] = property;
+for (const [key, value] of personProperties) {
+  // const [key, value] = property;
 
   console.log(`${key}: ${value}`);
 }

@@ -9,3 +9,7 @@ const people = [
 const hermione = people.findIndex((person) => person.name === 'Hermione');
 
 console.log(hermione);
+
+const newPeople = people.slice(0, hermione);
+
+console.log(newPeople);

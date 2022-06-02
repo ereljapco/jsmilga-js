@@ -94,4 +94,15 @@ const filteredProducts = products.filter((product) =>
   product.title.toLowerCase().includes(text)
 );
 
-console.log(filteredProducts);
+// console.log(filteredProducts);
+
+// ----- array includes()
+
+const groceries = ['milk', 'bread', 'eggs'];
+
+let randomItem = 'rice';
+randomItem = 'milk';
+
+if (groceries.includes(randomItem)) {
+  console.log(`It's on the list!`);
+}

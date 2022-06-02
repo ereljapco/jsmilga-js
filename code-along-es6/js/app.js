@@ -38,6 +38,8 @@ const person = {
 // ----- Object.keys, Object.values, Object.entries
 const personKeys = Object.keys(person);
 const personValues = Object.values(person);
+const personProperties = Object.entries(person);
 
 // console.log(personKeys);
-console.log(personValues);
+// console.log(personValues);
+console.log(personProperties);

@@ -30,6 +30,12 @@ const person = {
   house: 'Gryffindor',
 };
 
-for (const property in person) {
-  console.log(`${property}: ${person[property]}`);
-}
+// for (const property in person) {
+//   console.log(`${property}: ${person[property]}`);
+// }
+
+////////////////////////////////////
+// ----- Object.keys, Object.values, Object.entries
+const personKeys = Object.keys(person);
+
+console.log(personKeys);

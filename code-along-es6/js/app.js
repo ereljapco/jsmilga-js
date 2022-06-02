@@ -1,4 +1,4 @@
-// ----- find
+// ----- find and findIndex
 
 const people = [
   { id: 1, name: 'Harry' },
@@ -6,6 +6,6 @@ const people = [
   { id: 3, name: 'Hermione' },
 ];
 
-const hermione = people.find((person) => person.name === 'Hermione');
+const hermione = people.findIndex((person) => person.name === 'Hermione');
 
-console.log(hermione.name);
+console.log(hermione);

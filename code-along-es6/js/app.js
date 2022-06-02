@@ -44,8 +44,37 @@ const personProperties = Object.entries(person);
 // console.log(personValues);
 // console.log(personProperties);
 
-for (const [key, value] of personProperties) {
-  // const [key, value] = property;
+// for (const [key, value] of personProperties) {
+//   // const [key, value] = property;
 
-  console.log(`${key}: ${value}`);
+//   console.log(`${key}: ${value}`);
+// }
+
+////////////////////////////////////
+// ----- new Set()
+const students = [
+  {
+    name: 'Harry',
+    house: 'Gryffindor',
+  },
+  {
+    name: 'Hermione',
+    house: 'Gryffindor',
+  },
+  {
+    name: 'Cho',
+    house: 'Ravenclaw',
+  },
+  {
+    name: 'Malfoy',
+    house: 'Slytherin',
+  },
+];
+
+const houses = new Set();
+
+for (const student of students) {
+  houses.add(student.house);
 }
+
+console.log(houses);

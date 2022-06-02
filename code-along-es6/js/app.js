@@ -14,10 +14,22 @@ const newPeople = people.slice(0, hermione);
 
 // console.log(newPeople);
 
-// ----- every
-
+/////////////////////////////////////
+// ----- every and some
 const grades = [65, 88, 93, 55, 90];
 // const allGoodGrades = grades.every((grade) => grade >= 65);
 const someGoodGrades = grades.some((grade) => grade >= 65);
 
-console.log(someGoodGrades);
+// console.log(someGoodGrades);
+
+/////////////////////////////////////
+// ----- for in
+const person = {
+  name: 'Harry',
+  year: 'Sophomore',
+  house: 'Gryffindor',
+};
+
+for (const property in person) {
+  console.log(`${property}: ${person[property]}`);
+}

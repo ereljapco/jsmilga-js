@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Harry",
+    "house": "Gryffindor"
+  },
+  {
+    "id": 2,
+    "name": "Luna Lovegood",
+    "house": "Ravenclaw"
+  },
+  {
+    "id": 3,
+    "name": "Cedric Diggory",
+    "house": "Hufflepuff"
+  },
+  {
+    "id": 4,
+    "name": "Draco Malfoy",
+    "house": "Slytherin"
+  }
+]

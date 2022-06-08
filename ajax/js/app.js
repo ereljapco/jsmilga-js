@@ -2,9 +2,13 @@ const url = '../api/people.json';
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', async () => {
-  const response = await fetch(url);
-  const data = await response.json();
-  displayText(data);
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayText(data);
+  } catch (error) {
+    console.log(error);
+  }
 });
 
 function displayText(data) {
